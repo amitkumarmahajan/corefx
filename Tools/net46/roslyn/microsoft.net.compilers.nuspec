@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Net.Compilers</id>
+    <version>3.0.0-beta2-final</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <licenseUrl>https://github.com/dotnet/roslyn/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/dotnet/roslyn</projectUrl>
+    <description>.NET Compilers package.
+      Referencing this package will cause the project to be built using the specific version of the C# and Visual Basic compilers contained in the package, as opposed to any system installed version.
+
+      This package can be used to compile code targeting any platform, but can only be run using the desktop .NET 4.7.2+ Full Framework.
+      
+    
+      More details at https://aka.ms/roslyn-packages
+      This package was built from the source at https://github.com/dotnet/roslyn/commit/231aeb8be8357239499d45c0574e5a9a8c9174f0.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Roslyn CodeAnalysis Compiler CSharp VB VisualBasic Parser Scanner Lexer Emit CodeGeneration Metadata IL Compilation Scripting Syntax Semantics</tags>
+    <serviceable>true</serviceable>
+    <repository type="git" url="https://github.com/dotnet/roslyn" commit="231aeb8be8357239499d45c0574e5a9a8c9174f0" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Runtime.InteropServices" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Threading.Thread" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
